@@ -25,10 +25,18 @@ Diligent Learner implementation
 
 ## Before You Start
 
-Install all dependencies using [uv](https://docs.astral.sh/uv/):
+To install all dependencies use [uv](https://docs.astral.sh/uv/)
+
+for CPU-only:
 
 ```bash
-uv sync
+uv sync --extra cpu
+```
+
+for CUDA 12.8:
+
+```bash
+uv sync --extra cu128
 ```
 
 Optionally, enable pre-commit hooks for auto-formatting/linting:
